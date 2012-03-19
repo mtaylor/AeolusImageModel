@@ -5,10 +5,7 @@ class CreateTargetImages < ActiveRecord::Migration
       t.string :factory_id
       t.integer :image_version_id
       # Provider returned String for target type
-      t.string :target
-      # This is returned from factory (Need to clarify what this entails to decide whether 
-      # we need to store this)
-      t.string :parameters
+      t.string :provider_type_id
       t.string :status
       t.string :status_details
       t.timestamps
