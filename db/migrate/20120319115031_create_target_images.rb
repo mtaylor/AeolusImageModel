@@ -4,7 +4,6 @@ class CreateTargetImages < ActiveRecord::Migration
       t.integer :id
       t.string :factory_id
       t.integer :image_version_id
-      t.integer :template_id
       # Provider returned String for target type
       t.string :target
       # This is returned from factory (Need to clarify what this entails to decide whether 

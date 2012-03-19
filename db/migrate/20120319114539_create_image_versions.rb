@@ -3,6 +3,7 @@ class CreateImageVersions < ActiveRecord::Migration
     create_table :image_versions do |t|
       t.integer :id
       t.integer :base_image_id
+      t.integer :template_id
 
       t.timestamps
     end
